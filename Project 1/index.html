@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dynamic Fetch App</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    label {margin: 16px;}
+    select, input, button { margin: 16px; display: block; width: 180px; height: 30px; border-radius: 6px;}
+    .filters { margin-top: px; }
+    pre { background: #f4f4f4; padding: 15px; white-space: pre-wrap; max-height: 400px; overflow: auto; }
+  </style>
+</head>
+<body>
+  <h2>Fetch JSONPlaceholder Data with Filters</h2>
+
+  <label><h3>Choose resource:</h3>
+    <select id="resource" onchange="updateFilters()">
+      <option value="posts">Posts</option>
+      <option value="comments">Comments</option>
+      <option value="albums">Albums</option>
+      <option value="photos">Photos</option>
+      <option value="todos">Todos</option>
+      <option value="users">Users</option>
+    </select>
+  </label>
+
+  <div class="filters" id="filterFields"></div>
+
+  <button onclick="fetchData()">Fetch Data</button>
+
+  <h3>Results:</h3>
+  <pre id="results">No results yet...</pre>
+
+  <script src="app.js"></script>
+</body>
+</html>
