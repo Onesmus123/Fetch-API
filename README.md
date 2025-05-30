@@ -30,7 +30,6 @@ A simple project using the **Fetch API** to `GET` and `POST` data from [JSONPlac
   - Enter filter values
   - Fetch and display results dynamically
 
----
 
 ## 🚀 How to Clone and Run
 
@@ -49,7 +48,6 @@ Open each `.js` file in a browser environment using Node.js setup (if configured
 2. Select a resource and enter filter values.
 3. Click **"Fetch Data"** to view results.
 
----
 
 **Built by Onesmus Mutyauvyu David** ✨
 
