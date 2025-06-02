@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fetch API</title>
+</head>
+<body>
+
+    <h3>Choose a Pokémon:</h3>
+    <label for="pokemon-select"></label>
+    <select id="pokemon-select" name="pokemon">
+        <option value="pikachu">Pikachu</option>
+        <option value="charizard">Charizard</option>
+        <option value="mewtwo">Mewtwo</option>
+        <option value="eevee">Eevee</option>
+        <option value="lucario">Lucario</option>
+        <option value="greninja">Greninja</option>
+        <option value="gengar">Gengar</option>
+        <option value="snorlax">Snorlax</option>
+        <option value="bulbasaur">Bulbasaur</option>
+        <option value="garchomp">Garchomp</option>
+    </select>
+
+    <button type="button" onclick="fetchData()">Fetch Pokémon</button>
+    <br><br>
+
+    <img src="" alt="Pokémon Sprite" id="pokemonSprite" style="display: none;">
+
+    <script src="script.js"></script>
+</body>
+</html>
